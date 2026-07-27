@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   highlights,
   pillars,
@@ -72,12 +71,13 @@ export default function Home() {
 
           <div className="hero-visual">
             <div className="portrait-frame">
-              <Image
+              <img
                 src="/jerome-villiseck.jpg"
                 alt="Portrait de Jérôme Villiseck"
                 width={720}
                 height={900}
-                priority
+                fetchPriority="high"
+                decoding="async"
               />
               <div className="portrait-caption">
                 <span>6 ans</span>

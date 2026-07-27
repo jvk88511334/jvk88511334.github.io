@@ -78,3 +78,10 @@ test("les métadonnées sociales utilisent la carte du portfolio", async () => {
   assert.match(layout, /Développeur full-stack/u);
   assert.match(layout, /summary_large_image/u);
 });
+
+test("le portrait utilise directement la ressource statique", async () => {
+  const source = await readFile(pagePath, "utf8");
+  assert.doesNotMatch(source, /from "next\/image"/u);
+  assert.match(source, /<img/u);
+  assert.match(source, /src="\/jerome-villiseck\.jpg"/u);
+});
