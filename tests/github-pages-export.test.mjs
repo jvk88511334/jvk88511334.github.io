@@ -32,6 +32,7 @@ test("exporte un portfolio statique complet pour GitHub Pages", async () => {
     access(new URL("out/jerome-villiseck.jpg", root)),
     access(new URL("out/cv-jerome-villiseck-2026.pdf", root)),
     access(new URL("out/stack-technique-jerome-villiseck.pdf", root)),
+    access(new URL("out/rapport-activite-2025-jerome-villiseck.pdf", root)),
     access(new URL("out/og.png", root)),
   ]);
 });

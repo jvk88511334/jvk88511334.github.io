@@ -34,6 +34,13 @@ export default function Home() {
             >
               Stack
             </a>
+            <a
+              href="/rapport-activite-2025-jerome-villiseck.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Rapport d’activité
+            </a>
             <a href="#parcours">Parcours</a>
             <a href="#contact">Contact</a>
           </nav>

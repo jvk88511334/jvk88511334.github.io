@@ -53,6 +53,16 @@ test("ouvre le dossier Stack dans un nouvel onglet sécurisé", async () => {
   );
 });
 
+test("ouvre le rapport d’activité dans un nouvel onglet sécurisé", async () => {
+  const response = await render();
+  const html = await response.text();
+
+  assert.match(
+    html,
+    /<a href="\/rapport-activite-2025-jerome-villiseck\.pdf" target="_blank" rel="noopener noreferrer">Rapport d’activité<\/a>/i,
+  );
+});
+
 test("retire complètement les ressources de démonstration", async () => {
   await assert.rejects(access(new URL("app/_sites-preview", root)));
 
