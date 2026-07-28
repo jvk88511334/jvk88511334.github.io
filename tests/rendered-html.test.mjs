@@ -43,6 +43,16 @@ test("rend le portfolio professionnel en français", async () => {
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
 });
 
+test("ouvre le dossier Stack dans un nouvel onglet sécurisé", async () => {
+  const response = await render();
+  const html = await response.text();
+
+  assert.match(
+    html,
+    /<a href="\/stack-technique-jerome-villiseck\.pdf" target="_blank" rel="noopener noreferrer">Stack<\/a>/i,
+  );
+});
+
 test("retire complètement les ressources de démonstration", async () => {
   await assert.rejects(access(new URL("app/_sites-preview", root)));
 

@@ -49,7 +49,6 @@ test("la page contient les repères sémantiques et les alternatives", async () 
   assert.match(source, /<nav/u);
   assert.match(source, /alt="Portrait de Jérôme Villiseck"/u);
   assert.match(source, /href="#realisations"/u);
-  assert.match(source, /href="#stack"/u);
   assert.match(source, /href="#parcours"/u);
   assert.match(source, /href="#contact"/u);
 });

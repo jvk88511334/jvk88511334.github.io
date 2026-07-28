@@ -27,7 +27,13 @@ export default function Home() {
 
           <nav aria-label="Navigation principale">
             <a href="#realisations">Réalisations</a>
-            <a href="#stack">Stack</a>
+            <a
+              href="/stack-technique-jerome-villiseck.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Stack
+            </a>
             <a href="#parcours">Parcours</a>
             <a href="#contact">Contact</a>
           </nav>
