@@ -59,7 +59,7 @@ test("ouvre le rapport d’activité dans un nouvel onglet sécurisé", async ()
 
   assert.match(
     html,
-    /<a href="\/rapport-activite-2025-jerome-villiseck\.pdf" target="_blank" rel="noopener noreferrer">Rapport d’activité<\/a>/i,
+    /<a href="\/rapport-activite-2025-jerome-villiseck\.pdf" target="_blank" rel="noopener noreferrer">Rapport d’activité 2025-2026<\/a>/i,
   );
 });
 

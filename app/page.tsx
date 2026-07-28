@@ -39,7 +39,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Rapport d’activité
+              Rapport d’activité 2025-2026
             </a>
             <a href="#parcours">Parcours</a>
             <a href="#contact">Contact</a>
